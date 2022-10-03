@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>柯小侠的个人网站</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    /* *{
+            border: 1px solid black;
+        } */
+    .yinying {
+      box-shadow: #f03f24;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .baise {
+      background-color: #c3d2c3d1;
+    }
+
+    .flex1 {
+      flex: 1;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .mg8 {
+      margin: 8px;
+    }
+
+    .mgr8 {
+      margin-right: 8px;
+    }
+
+    .mgt8 {
+      margin-top: 8px;
+    }
+
+    .daohang {
+      padding: 10px 20px;
+      /* border-bottom: 1px solid #999; */
+      font-size: 14px;
+      color: #666;
+    }
+
+    .duiqi {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .beijing {
+      background: url(丛林.jpg) left top repeat;
+    }
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+    }
+
+    .xiahuaxian {
+      text-decoration: none;
+    }
+
+    .shujukuai {
+      height: 100px;
+    }
+
+    .liebiaolan {
+      height: 160px;
+    }
+
+    .neirong::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .ceBian {
+        display: none;
+      }
+
+      .neiRong {
+        flex-direction: column;
+      }
+
+      .shujuqu {
+        flex-direction: column;
+      }
+
+      .youqu {
+        margin-left: 8px;
+      }
+
+      .shujukuai {
+        margin: 0 0 8px;
+        flex: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="flex">
+  <!-- 侧边栏 -->
+  <div style="width: 200px; z-index: 2" class="ceBian baise yinying">
+    <!-- 头像栏 -->
+    <div style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        " class="flex">
+      <img src="https://s1.328888.xyz/2022/09/28/sspZw.png" alt="蛛网" width="40px" height="40px" />
+      <div style="margin-left: 10px; font-size: 14px; color: #207f4c">
+        柯小侠
+      </div>
+    </div>
+    <!-- 导航栏 -->
+    <div style="justify-content: center; align-items: center" class="flex column">
+      <div style="color: pink" class="daohang duiqi">
+        <a style="color: #5d3131" href="myInfo.html" class="xiahuaxian"><b>个人信息</b></a>
+      </div>
+      <div style="color: pink" class="daohang duiqi">
+        <a style="color: #5d3131" href="study.html" class="xiahuaxian"><b>学习经历</b></a>
+      </div>
+      <div style="color: pink" class="daohang duiqi">
+        <a style="color: #5d3131" href="hobby.html" class="xiahuaxian"><b>兴趣爱好</b></a>
+      </div>
+      <div style="color: pink" class="daohang duiqi">
+        <a style="color: #5d3131" href="rewards.html" class="xiahuaxian"><b>奖惩情况</b></a>
+      </div>
+      <div style="color: pink" class="daohang duiqi">
+        <a style="color: #5d3131" href="myPhotos.html" class="xiahuaxian"><b>我的相册</b></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主区域 -->
+  <div class="flex1 flex column">
+    <!-- 主区域上1,头部栏 -->
+    <div style="height: 60px; z-index: 1" class="baise flex yinying duiqi">
+      <h1>
+        <p class="p">~Welcom to visit Frank's page~</p>
+      </h1>
+    </div>
+    <!-- 主区域下2,内容栏-->
+    <div style="overflow: auto" class="neiRong flex1 flex">
+      <!-- 内容栏左区 -->
+      <div style="flex: 3" class="flex column mg8">
+        <!-- 数据区 -->
+        <div class="flex shujuqu">
+          <!-- 数据块1 -->
+          <div class="shujukuai flex1 baise yinying mgr8"></div>
+          <div class="shujukuai flex1 baise yinying mgr8"></div>
+          <div class="shujukuai flex1 baise yinying mgr8"></div>
+          <div class="shujukuai flex1 baise yinying"></div>
+        </div>
+        <!-- 列表区 -->
+        <div class="flex column">
+          <!-- 列表项 -->
+          <div class="liebiaolan baise yinying mgt8"></div>
+          <div class="liebiaolan baise yinying mgt8"></div>
+          <div class="liebiaolan baise yinying mgt8"></div>
+          <div class="liebiaolan baise yinying mgt8"></div>
+          <div class="liebiaolan baise yinying mgt8"></div>
+          <div class="liebiaolan baise yinying mgt8"></div>
+        </div>
+      </div>
+
+      <!-- 内容栏右区 -->
+      <div style="flex: 1" class="youqu flex column mgt8 mgr8">
+        <!-- 提示区 -->
+        <div class="baise yinying" style="height: 150px"></div>
+        <!-- 消息区 -->
+        <div class="baise yinying mgt8" style="height: 300px"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
